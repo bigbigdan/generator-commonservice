@@ -1,0 +1,51 @@
+{
+  "name": "generator-commonservice",
+  "version": "0.0.1",
+  "description": "base web structure for erealm devs",
+  "homepage": "",
+  "author": {
+    "name": "erealm",
+    "email": "dev@erealmsoft.com",
+    "url": "http://www.erealmsoft.com"
+  },
+  "files": [
+    "generators"
+  ],
+  "main": "generators/index.js",
+  "keywords": [
+    "meanjs",
+    "common service",
+    "yeoman-generator"
+  ],
+  "devDependencies": {
+    "yeoman-test": "^1.6.0",
+    "yeoman-assert": "^3.0.0",
+    "nsp": "^2.6.3",
+    "eslint": "^4.1.0",
+    "eslint-config-xo-space": "^0.16.0",
+    "jest": "^21.0.0",
+    "jest-cli": "^21.0.0"
+  },
+  "dependencies": {
+    "underscore.inflections": "~0.2.1",
+    "underscore.string": "~3.2.2",
+    "yeoman-generator": "^1.0.0",
+    "chalk": "^1.1.3",
+    "yosay": "^2.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "scripts": {
+    "prepublish": "nsp check"
+  },
+  "eslintConfig": {
+    "extends": "xo-space",
+    "env": {
+      "jest": true,
+      "node": true
+    }
+  },
+  "repository": "erealmsoft/generator-commonservice",
+  "license": "MIT"
+}

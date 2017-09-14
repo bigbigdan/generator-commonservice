@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "erealm",
+      "authorEmail": "dev@erealmsoft.com",
+      "authorUrl": "http://www.erealmsoft.com"
+    }
+  }
+}
