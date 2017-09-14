@@ -7,13 +7,13 @@ First, install [Yeoman](http://yeoman.io) and generator-commonservice using [npm
 
 ```bash
 npm install -g yo
-npm install -g generator-commonservice
+npm install -g @erealm/generator-commonservice
 ```
 
 Then generate your new project:
 
 ```bash
-yo commonservice
+yo @erealm/commonservice
 ```
 
 ## Getting To Know Yeoman

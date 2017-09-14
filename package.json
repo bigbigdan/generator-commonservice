@@ -1,13 +1,9 @@
 {
-  "name": "generator-commonservice",
+  "name": "@erealm/generator-commonservice",
   "version": "0.0.1",
   "description": "base web structure for erealm devs",
-  "homepage": "",
-  "author": {
-    "name": "erealm",
-    "email": "dev@erealmsoft.com",
-    "url": "http://www.erealmsoft.com"
-  },
+  "homepage": "https://github.com/erealmsoft/generator-commonservice#readme",
+  "author": "erealm <dev@erealmsoft.com> (http://www.erealmsoft.com)",
   "files": [
     "generators"
   ],
@@ -46,6 +42,12 @@
       "node": true
     }
   },
-  "repository": "erealmsoft/generator-commonservice",
-  "license": "MIT"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erealmsoft/generator-commonservice.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/erealmsoft/generator-commonservice/issues"
+  }
 }
