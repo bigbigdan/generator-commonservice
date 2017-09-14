@@ -1,5 +1,5 @@
 /**
- * Copyright 2017 Erealm Info & Tech.
+ * Copyright <%= createdYear %> Erealm Info & Tech.
  *
  * Created by <%= developer %> at <%= createdTime %>.
  */

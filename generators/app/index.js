@@ -1,5 +1,5 @@
 /**
- * Copyright 2017 Erealm Info & Tech.
+ * Copyright <%= createdYear %> Erealm Info & Tech.
  *
  * Created by <%= developer %> at <%= createdTime %>.
  */
@@ -26,7 +26,7 @@ var formatDate = function(date) {
   var year = date.getFullYear();
 
   return day + ' ' + monthNames[monthIndex] + ' ' + year;
-}
+};
 
 module.exports = class extends Generator {
   initializing() {
@@ -52,6 +52,8 @@ module.exports = class extends Generator {
       this.props.moduleName = props.moduleName;
       this.props.developer = props.developer;
       this.props.createdTime = formatDate(new Date());
+      this.props.createdYear = (new Date()).getFullYear();
+
       done();
     });
   }

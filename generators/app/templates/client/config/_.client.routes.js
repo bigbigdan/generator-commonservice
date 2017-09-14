@@ -1,5 +1,5 @@
 /**
- * Copyright 2017 Erealm Info & Tech.
+ * Copyright <%= createdYear %> Erealm Info & Tech.
  *
  * Created by <%= developer %> at <%= createdTime %>.
  */
@@ -15,10 +15,18 @@
 
   function routeConfig($stateProvider) {
     $stateProvider
-      .state('<%= slugifiedPluralName %>', {
-        url: '/<%= slugifiedPluralName %>',
+      .state('dashboard.<%= slugifiedPluralName %>', {
+        url: 'dashboard/<%= slugifiedPluralName %>',
         controller: '<%= classifiedPluralName %>Controller',
-        template: 'modules/<%= moduleName %>/client/views/<%= slugifiedPluralName %>.client.view.html'
+        templateUrl: 'modules/<%= moduleName %>/client/views/<%= slugifiedSingularName %>.client.view.html',
+        controllerAs: 'vm',
+        resolve: {
+            <%= slugifiedSingularName %>Resolve: new<%= classifiedSingularName %>
+        },
+        data: {
+            roles: ['admin'],
+            pageTitle: 'Edit <%= humanizedSingularName %> {{ <%= slugifiedSingularName %>Resolve.name }}'
+        }
       });
   }
 

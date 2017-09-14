@@ -1,5 +1,5 @@
 /**
- * Copyright 2017 Erealm Info & Tech.
+ * Copyright <%= createdYear %> Erealm Info & Tech.
  *
  * Created by <%= developer %> at <%= createdTime %>.
  */
@@ -9,8 +9,9 @@
 /**
  * Module dependencies
  */
-var authHelper = require(path.resolve('./config/helper/auth')),
-  <%= camelizedPluralName %> = require('../controllers/<%= slugifiedPluralName %>.server.controller');
+var path = require('path'),
+    authHelper = require(path.resolve('./config/helper/auth')),
+    <%= camelizedPluralName %> = require('../controllers/<%= slugifiedPluralName %>.server.controller');
 
 module.exports = function(app) {
   // <%= humanizedPluralName %> Routes

@@ -1,6 +1,6 @@
 {
   "name": "@erealm/generator-commonservice",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "base web structure for erealm devs",
   "homepage": "https://github.com/erealmsoft/generator-commonservice#readme",
   "author": "erealm <dev@erealmsoft.com> (http://www.erealmsoft.com)",
